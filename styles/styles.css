@@ -1,0 +1,37 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c0c0c0;
+    color: #333;
+    line-height: 1.6;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header, .footer {
+    background-color: #2a4362;
+    color: white;
+    padding: 15px 0;
+}
+
+.main-navigation ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.main-navigation li {
+    margin: 0 15px
+}
+
+.main-navigation a {
+    text-decoration: none;
+    color: white;
+}
