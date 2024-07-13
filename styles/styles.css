@@ -8,7 +8,6 @@ body {
     font-size: large;
     background-color: #c0c0c0;
     color: #333;
-    line-height: 1.6;
 }
 
 h1 {
@@ -16,7 +15,6 @@ h1 {
 }
 
 .profile-pic {
-    float: center;
     width: 175px; 
     height: 175px; 
     border-radius: 50%;
@@ -25,10 +23,10 @@ h1 {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: auto;
     padding: 20px;
-    justify-content: center;
+    min-height: calc(100vh - 60px); /* Altura mínima para garantir espaço para rolagem */
 }
 
 .main-navigation ul {
@@ -38,7 +36,7 @@ h1 {
 }
 
 .main-navigation li {
-    margin: 0 15px
+    margin: 0 15px;
 }
 
 .main-navigation a {
@@ -53,8 +51,24 @@ h1 {
     text-align: center;
 }
 
-.footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.grid-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
 }
+
+.item-projeto {
+    background-color: #2a4362;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #c0c0c0;
+}
+
+.item-projeto img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
