@@ -14,19 +14,12 @@ h1 {
     text-align: center;
 }
 
-.profile-pic {
-    width: 175px; 
-    height: 175px; 
-    border-radius: 50%;
-    margin-right: 20px; 
-    object-fit: cover; 
-}
-
 .container {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
-    min-height: calc(100vh - 60px); /* Altura mínima para garantir espaço para rolagem */
+    min-height: calc(100vh - 60px);
+    text-align: center;
 }
 
 .main-navigation ul {
@@ -66,9 +59,24 @@ h1 {
 }
 
 .item-projeto img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
     display: block;
     margin: 0 auto;
+}
+
+.img-perfil{
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.footer-icon{
+    width: 35px;
+    height: auto;
+    margin: 0 10px;
 }
 
